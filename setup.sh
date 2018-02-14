@@ -109,3 +109,8 @@ sudo apt -y install p7zip-full vbindiff
 sudo apt -y install imagemagick
 sudo apt -y install zbar-tools
 
+# Personal config, comment out if yr not me
+git config --global user.name "Max David"
+git config --global user.email me@maxdavid.com
+cd $HOMEDIR
+git clone --recursive https://github.com/maxdavid/dotfiles
