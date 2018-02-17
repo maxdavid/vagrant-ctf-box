@@ -112,5 +112,10 @@ sudo apt -y install zbar-tools
 # Personal config, comment out if yr not me
 git config --global user.name "Max David"
 git config --global user.email me@maxdavid.com
+sudo sudo apt -y install stow
 cd $HOMEDIR
-git clone --recursive https://github.com/maxdavid/dotfiles
+rm .bashrc
+#git clone --recursive https://github.com/maxdavid/dotfiles
+git clone https://github.com/maxdavid/dotfiles .dotfiles
+cd .dotfiles
+for d in $(ls); do stow $d; done
