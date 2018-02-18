@@ -52,16 +52,6 @@ sudo python setup.py install
 sudo apt-get -y install squashfs-tools
 sudo apt-get -y install python-lzma
 
-# Install Firmware-Mod-Kit
-sudo apt-get -y install git build-essential zlib1g-dev liblzma-dev python-magic
-cd ~/tools
-wget https://firmware-mod-kit.googlecode.com/files/fmk_099.tar.gz
-tar xvf fmk_099.tar.gz
-rm fmk_099.tar.gz
-cd fmk_099/src
-./configure
-make
-
 # Install american-fuzzy-lop
 sudo apt-get -y install clang llvm
 cd $HOMEDIR/tools
